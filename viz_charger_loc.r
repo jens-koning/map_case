@@ -32,7 +32,7 @@ p1 <- ggplot(data = selected_countries) +
   geom_sf() +
   geom_sf(data = gdf, color = 'red', size = 1) +
   coord_sf(xlim = c(3, 27), ylim = c(47, 71), expand = FALSE) +
-  ggtitle('Charger Network Eviny by Station Name') +
+  ggtitle('Charger Network Eviny') +
   theme_minimal()
 ggsave('charger_locations.png', p1, width = 10, height = 10)
 
@@ -59,7 +59,7 @@ gadm_data_norway$station_count[is.na(gadm_data_norway$station_count)] <- 0
 p2 <- ggplot(data = gadm_data_norway) +
   geom_sf(aes(fill = log1p(station_count))) +
   scale_fill_viridis_c(option = "viridis", direction = -1, name = "Number of Stations") +
-  ggtitle('Charger Network Density by District in Norway') +
+  ggtitle('Eviny Charger Network Density in Norway (by District)') +
   theme_minimal()
 ggsave('charger_density_district_nor.png', p2, width = 10, height = 10)
 
