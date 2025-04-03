@@ -57,8 +57,8 @@ gadm_data_norway$station_count[is.na(gadm_data_norway$station_count)] <- 0
 
 # Charger station density by district
 p2 <- ggplot(data = gadm_data_norway) +
-  geom_sf(aes(fill = log10(station_count))) +
-  scale_fill_viridis_c(option = "magma", direction = -1, name = "Number of Stations") +
+  geom_sf(aes(fill = log1p(station_count))) +
+  scale_fill_viridis_c(option = "viridis", direction = -1, name = "Number of Stations") +
   ggtitle('Charger Network Density by District in Norway') +
   theme_minimal()
 ggsave('charger_density_district_nor.png', p2, width = 10, height = 10)
