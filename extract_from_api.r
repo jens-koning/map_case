@@ -1,3 +1,4 @@
+
 # remove all objects from the environment
 rm(list = ls())
 
@@ -20,20 +21,11 @@ fetch_charging_data <- function() {
   }
 }
 
-# Main function
+# Function to save data to JSON 
 main <- function() {
-  # Fetch the raw data
   raw_data <- fetch_charging_data()
   
-  # Display the raw data structure
-  cat("Raw Data Structure:\n")
-  print(str(raw_data))
-  
-  # Display the first few records of raw data
-  cat("\nSample of Raw Data:\n")
-  print(head(raw_data))
-  
-  # Save the data to a JSON file
+  # save to JSON file
   json_data <- toJSON(raw_data, pretty = TRUE)
   write(json_data, "charging_stations_data.json")
   cat("\nData saved to charging_stations_data.json\n")
