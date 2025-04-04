@@ -59,6 +59,35 @@ This R script visualizes electric vehicle charger locations and their density ac
 ![Charger Density by District in Norway](charger_density_district_nor.png)
 
 ## Charger Utilization Simulation (simulate_utilization.py)
-Ideally, I'd would have liked to have used the sample the snapshots from the API to simulate the utilization of the chargers over time. However, due to time constraints, I've used a simplified approach to simulate the data for utilization over time.
+Ideally, I'd would have liked to have used the sample the snapshots from the API to simulate the utilization of the chargers over time. However, due to time constraints, I've used a simplified approach to simulate the data for utilization over time. This Python script simulates the utilization of electric vehicle chargers over a 24-hour period
 
-###
+### Features
+
+- **Data Import**: Loads charger information from a CSV file.
+- **Utilization Simulation**: Simulates charger utilization on a scale of 0 (no users of charging station) to 1 (all users of charging station) over a fictional 24 hour period, with specific busy and non-busy times. 
+- **Data Processing**: 
+  - Selects a subset of chargers for detailed analysis.
+  - Merges utilization data with charger connection type information.
+- **CSV Export**: Saves the simulated utilization data to a CSV file.
+- **Data Visualization**:
+  - **Line Plot**: Shows utilization changes over time for selected chargers by connection type.
+  - **Heatmap**: Visualizes the average utilization rate by hour for each connection type.
+
+### Requirements
+
+- Python packages: `pandas`, `numpy`, `matplotlib`, `seaborn`
+
+### Usage
+
+1. Ensure the required Python packages are installed.
+2. Place the `charger_info.csv` file in the working directory.
+3. Run the script to simulate utilization, save the data to `charger_utilization.csv`, and generate visualizations.
+
+## Output Files
+
+- `charger_utilization.csv`: A CSV file containing simulated utilization data for selected chargers.
+- `charger_utilization_over_time.png`: A line plot showing utilization changes over time for selected chargers.
+- `utilization_rate_by_hour_heatmap.png`: A heatmap illustrating the average utilization rate by hour for each connection type.
+
+### Utilization Rate by Hour Heatmap (0-1)
+![Utilization Rate by Hour Heatmap](utilization_rate_by_hour_heatmap.png)
