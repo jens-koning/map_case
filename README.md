@@ -1,35 +1,35 @@
 # Case Assignment - SurplusMap
 
-# Charging Stations Data Extraction (extract_api.py)
+## Charging Stations Data Extraction (extract_api.py)
 
 This Python script extracts data from an API providing information about electric vehicle charging stations and saves the extracted data to a CSV file.
 
-## Features
+### Features
 
 - **API Data Fetching**: Retrieves data from the specified API endpoint.
 - **JSON Data Handling**: Loads and processes JSON data to extract relevant information.
 - **Data Transformation**: Converts extracted data into a structured format using pandas.
 - **CSV Export**: Saves the processed data into a CSV file for further analysis.
 
-## Requirements
+### Requirements
 
 - Python packages: `requests`, `pandas`, `json`
 
-## Usage
+### Usage
 
 1. Ensure the required Python packages are installed.
 2. Run the script to fetch data from the API and save it to `charger_info.csv`.
 
-## Output Files
+### Output Files
 
 - `charger_info.csv`: A CSV file containing detailed information about charging stations, including station ID, name, connection type, charger ID, status, effect, tariff definition, and geographical coordinates.
 
 
-# Charger Locations Visualization (viz_charger_loc.r)
+## Charger Locations Visualization (viz_charger_loc.r)
 
 This R script visualizes electric vehicle charger locations and their density across selected countries, with a focus on Norway. It uses spatial data to create maps and outputs visualizations as PNG files.
 
-## Features
+### Features
 
 - **Data Loading**: Reads charger location data from a CSV file.
 - **Spatial Data Handling**: Utilizes `sf` and `rnaturalearth` packages to manage spatial data.
@@ -38,17 +38,17 @@ This R script visualizes electric vehicle charger locations and their density ac
   - Visualizes charger station density by district in Norway using GADM data.
 - **Output**: Saves visualizations as PNG files and exports a CSV with district-level charger counts.
 
-## Requirements
+### Requirements
 
 - R packages: `sf`, `ggplot2`, `dplyr`, `rnaturalearth`, `rnaturalearthdata`, `viridis`
 
-## Usage
+### Usage
 
 1. Ensure the required R packages are installed.
 2. Place the `charger_info.csv` and `gadm41_NOR_2.json` files in the working directory.
 3. Run the script to generate visualizations and output files.
 
-## Output Files
+### Output Files
 
 - `charger_locations.png`: Map of charger locations in selected countries.
 - `charger_density_district_nor.png`: Map of charger density by kommune/district in Norway.
