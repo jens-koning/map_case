@@ -1,5 +1,5 @@
 # Case Assignment - SurplusMap
-Scripts available under the `scripts` folder. Run the scripts in the order of the file names (1 to 3). The GADM shape files to map data to Norway is available under the `data` folder, but can be downloaded from [here](https://gadm.org/). 
+Annotated scripts available under the `scripts` folder. Run the scripts in the order of the file names (1_extract_api.py to 3_simulate_utilization.py). The GADM shape files for Norway is available under the `data` folder, but can be downloaded from [here](https://gadm.org/). 
 
 ## Charging Stations Data Extraction (extract_api.py)
 
@@ -90,10 +90,10 @@ Ideally, I'd would have liked to have used the sample the snapshots from the API
 - `charger_utilization_over_time.png`: A line plot showing utilization changes over time for selected chargers.
 - `utilization_rate_by_hour_heatmap.png`: A heatmap illustrating the average utilization rate by hour for each connection type.
 
+### Utilization Changes Over Time for Selected Chargers
+![Utilization Changes Over Time](charger_utilization_over_time.png)
+
 ### Utilization Rate by Hour Heatmap (0-1)
 ![Utilization Rate by Hour Heatmap](utilization_rate_by_hour_heatmap.png)
 
 Following the above heatmap, we can see that the utilization rate is highest for all charger types at around 9:00am and 19:00pm, meaning that this is the time when most people are likely to charge their cars. 
-
-### Utilization Changes Over Time for Selected Chargers
-![Utilization Changes Over Time](charger_utilization_over_time.png)
