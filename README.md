@@ -51,8 +51,8 @@ This R script visualizes electric vehicle charger locations and their density ac
 ## Output Files
 
 - `charger_locations.png`: Map of charger locations in selected countries.
-- `charger_density_district_nor.png`: Map of charger density by district in Norway.
-- `charger_density_district_nor.csv`: CSV file with district names and charger counts.
+- `charger_density_district_nor.png`: Map of charger density by kommune/district in Norway.
+- `charger_density_district_nor.csv`: CSV file with kommune/district names and charger counts.
 
 ![Charger Netowork Eviny](charger_locations.png)
 
