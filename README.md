@@ -1,8 +1,7 @@
 # Case Assignment - SurplusMap
-Annotated scripts available under the `scripts` folder. Run the scripts in the order of the file names (1_extract_api.py to 3_simulate_utilization.py). The GADM shape files for Norway is available under the `data` folder, but can be downloaded from [here](https://gadm.org/). 
+Annotated scripts available under the `scripts` folder. Run the scripts in the order of the file names (1_extract_api.py to 3_simulate_utilization.py). The GADM shape files for Norway is available under the `data` folder, but can be downloaded from [here](https://gadm.org/). Updated versions of Python and R are recommended to run the scripts.
 
-## Charging Stations Data Extraction (extract_api.py)
-
+## Charging Stations Data Extraction (1_extract_api.py)
 This Python script extracts data from an API providing information about electric vehicle charging stations and saves the extracted data to a CSV file.
 
 ### Features
@@ -26,8 +25,7 @@ This Python script extracts data from an API providing information about electri
 - `charger_info.csv`: A CSV file containing detailed information about charging stations, including station ID, name, connection type, charger ID, status, effect, tariff definition, and geographical coordinates.
 
 
-## Charger Locations Visualization (viz_charger_loc.r)
-
+## Charger Locations Visualization (2viz_charger_loc.r)
 This R script visualizes electric vehicle charger locations and their density across selected countries, with a focus on Norway. It uses spatial data to create maps and outputs visualizations as PNG files.
 
 ### Features
@@ -59,8 +57,8 @@ This R script visualizes electric vehicle charger locations and their density ac
 
 ![Charger Density by District in Norway](charger_density_district_nor.png)
 
-## Charger Utilization Simulation (simulate_utilization.py)
-Ideally, I'd would have liked to have used the sample the snapshots from the API to simulate the utilization of the chargers over time. However, due to time constraints, I've used a simplified approach to simulate the data for utilization over time. This Python script simulates the utilization of electric vehicle chargers over a 24-hour period
+## Charger Utilization Simulation (3_simulate_utilization.py)
+Ideally, I'd would have liked to have used the sample the snapshots from the API to simulate the utilization of the chargers over time. However, due to time constraints, I've used a simplified approach to simulate the data for utilization over time. This Python script simulates the utilization of electric vehicle chargers over a 24-hour period.
 
 ### Features
 
