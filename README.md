@@ -94,3 +94,6 @@ Ideally, I'd would have liked to have used the sample the snapshots from the API
 ![Utilization Rate by Hour Heatmap](utilization_rate_by_hour_heatmap.png)
 
 Following the above heatmap, we can see that the utilization rate is highest for all charger types at around 9:00am and 19:00pm, meaning that this is the time when most people are likely to charge their cars. 
+
+### Utilization Changes Over Time for Selected Chargers
+![Utilization Changes Over Time](charger_utilization_over_time.png)
