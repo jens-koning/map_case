@@ -57,8 +57,3 @@ This R script visualizes electric vehicle charger locations and their density ac
 ![Charger Netowork Eviny](charger_locations.png)
 
 ![Charger Density by District in Norway](charger_density_district_nor.png)
-
-## Charger Utilization Simulation (simulate_utilization.py)
-Ideally, I'd would have liked to have used the sample the snapshots from the API to simulate the utilization of the chargers over time. However, due to time constraints, I've used a simplified approach to simulate the data for utilization over time.
-
-###
