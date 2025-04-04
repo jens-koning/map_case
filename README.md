@@ -1,4 +1,5 @@
 # Case Assignment - SurplusMap
+Scripts available under the `scripts` folder. Run the scripts in the order of the file names (1 to 3). The GADM shape files to map data to Norway is available under the `data` folder, but can be downloaded from [here](https://gadm.org/). 
 
 ## Charging Stations Data Extraction (extract_api.py)
 

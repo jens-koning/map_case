@@ -1,4 +1,5 @@
 #### Visualizing charger locations in R ####
+# remove temp objects
 rm(list=ls())
 
 # Load necessary libraries

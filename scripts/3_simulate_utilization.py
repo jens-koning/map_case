@@ -1,4 +1,5 @@
 #### Let's simulate charger use over a day! ####
+#remove temp objects
 for v in dir(): del globals()[v]
 
 # Bring in the necessary tools
