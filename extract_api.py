@@ -1,5 +1,5 @@
 #### Extract data from API and save to csv ####
-#rm temp objects
+#remove temp objects
 for v in dir(): del globals()[v]
 
 # load libraries
@@ -35,7 +35,16 @@ for station in data['chargingStations']:
 
 # convert to pandas df 
 charger_info_df = pd.DataFrame(charger_info)
-# print to inspect
-print(charger_info_df)
-# save to csv
+
+# inspecting the data
+print(charger_info_df.head())
+print(charger_info_df.describe()) 
+# there are 4222 rows/observations
+print(charger_info_df.info())
+
+# count columns with NA
+print(charger_info_df.isna().sum()) 
+# 0 missing values in columns - data 100% complete
+
+# save to csv in working dir
 charger_info_df.to_csv('charger_info.csv', index=False)
